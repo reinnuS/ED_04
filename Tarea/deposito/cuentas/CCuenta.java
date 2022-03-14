@@ -1,3 +1,10 @@
+/**
+ * Tarea UT04 Entornos de desarrollo.
+ * @author vladyslav@SistemasUbuntu
+ * @version 1.0
+ * @see <a href = https://aulavirtual3.educa.madrid.org> Aula virtual </a>
+ */
+
 package cuentas;
 
 public class CCuenta {
@@ -12,6 +19,13 @@ public class CCuenta {
     {
     }
 
+    /**
+     * 
+     * @param nom Nombre del titular
+     * @param cue Número de cuenta
+     * @param sal Saldo de cuenta
+     * @param tipo Tipo de interés
+     */
     public CCuenta(String nom, String cue, double sal, double tipo)
     {
         setNombre(nom);
@@ -19,6 +33,10 @@ public class CCuenta {
         setSaldo(sal);
     }
 
+    /**
+     * 
+     * @return Devuelve el saldo disponible en cuenta
+     */
     public double estado()
     {
         return getSaldo();
